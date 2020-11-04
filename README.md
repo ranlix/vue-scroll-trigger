@@ -1,6 +1,9 @@
 # vue-scroll-trigger
 A Vue plugin which supervises binding element's scrolling and trigger target elements class
 
+# Sample
+[BEHIVE-DESIGN](https://www.behive-design.com/office)
+
 # Install
 
 #### with `yarn` :
