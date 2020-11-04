@@ -1,10 +1,10 @@
 # vue-scroll-trigger
 A Vue plugin which supervises binding element's scrolling and trigger target elements class
 
-# Sample
+## Sample
 [BEHIVE-DESIGN](https://www.behive-design.com/office)
 
-# Install
+## Install
 
 #### with `yarn` :
 `yarn add vue-scroll-trigger`
@@ -12,7 +12,7 @@ A Vue plugin which supervises binding element's scrolling and trigger target ele
 #### or with `npm` :
 `npm install vue-scroll-trigger --save`
 
-# Usage
+## Usage
 
 ```javascript
 import vueScrollTrigger from 'vue-scroll-trigger'
