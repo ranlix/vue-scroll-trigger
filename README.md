@@ -17,7 +17,9 @@ A Vue plugin which supervises binding element's scrolling and trigger target ele
 ```javascript
 import vueScrollTrigger from 'vue-scroll-trigger'
 
-Vue.use(vueScrollTrigger);
+Vue.use(vueScrollTrigger, {
+  activeClass: 'active' // active is the default triggered className
+});
 ```
 
 ```html

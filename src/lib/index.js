@@ -1,7 +1,8 @@
-const install = function(Vue) {
+const install = function(Vue, options = {}) {
   /**
    * @function inViewport: Verify binding element whether in window viewport
    */
+  const { activeClass = 'active' } = options
   Vue.directive('scroll-trigger', {
     inViewport (el) {
       var rect = el.getBoundingClientRect()
@@ -22,10 +23,10 @@ const install = function(Vue) {
         }
         if (binding.def.inViewport(el)) {
           // if binding element is in viewport, toggle className of targetElement
-          targetElement.classList.add('active')
+          targetElement.classList.add(activeClass)
         } else {
           // if binding element is in viewport, remove className of targetElement
-          targetElement.classList.remove('active')
+          targetElement.classList.remove(activeClass)
         }
       }
       document.addEventListener('scroll', el.$onScroll)
